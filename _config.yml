@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: XuTu博客
+title: XuTu的博客
 subtitle: Little Land
 description: Hack to Create
 keywords: 
@@ -15,7 +15,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://alexander7xu.github.io
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 
 # Directory
@@ -143,4 +143,3 @@ live2d:
 #  host: alexander7xu.github.io
 #  token:  # 填写你的百度统计token，不写也没事
 #  path: baidu_urls.txt
-
