@@ -22,7 +22,7 @@ categories:
 
 ## 快速搭建
 
-先[安装node.js](https://nodejs.org/dist/v9.11.1/node-v9.11.1-x64.msi)（注意版本过高会导致hexo d出错）
+先[安装node.js](https://nodejs.org/download/release/v12.16.3/node-v12.16.3-x64.msi)（注意版本不同会存在问题）
 
 ```bash
 # clone我的分支
