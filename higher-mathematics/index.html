@@ -1,0 +1,1022 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Higher Mathematics, XuTu的博客">
+    <meta name="baidu-site-verification" content="fmlEuI34ir" />
+    <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
+    <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
+    <meta name="description" content="函数与极限函数的极限定义极限：$\lim\limits_{x\to x_0}f(x)=A\Leftrightarrow ∀ε&amp;gt;0，∃δ&amp;gt;0，当0&amp;lt;|x-x_0|&amp;lt;δ时，有|f(x)-A|&amp;lt;ε$
+左极限：$\li">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Higher Mathematics | XuTu的博客</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <style type="text/css">
+        
+    </style>
+
+    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?46e79e71af0709a5b9106bf20cecc493";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    
+
+    <script>
+        (function(){
+        var src = "https://jspassport.ssl.qhimg.com/11.0.1.js?d182b3f28525f2db83acfaaf6e696dba";
+        document.write('<script src="' + src + '" id="sozz"><\/script>');
+        })();
+    </script>
+
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-atom-dark.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+<body>
+
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">XuTu的博客</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
+    
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
+            
+            <i class="fa fa-home"></i>
+            
+            <span>首页</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/tags" class="waves-effect waves-light">
+            
+            <i class="fa fa-tags"></i>
+            
+            <span>标签</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/categories" class="waves-effect waves-light">
+            
+            <i class="fa fa-bookmark"></i>
+            
+            <span>分类</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/archives" class="waves-effect waves-light">
+            
+            <i class="fa fa-archive"></i>
+            
+            <span>归档</span>
+        </a>
+    </li>
+    
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">XuTu的博客</div>
+        <div class="logo-desc">
+            
+            Hack to Create
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li>
+            <a href="/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-home"></i>
+                
+                首页
+            </a>
+        </li>
+        
+        <li>
+            <a href="/tags" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-tags"></i>
+                
+                标签
+            </a>
+        </li>
+        
+        <li>
+            <a href="/categories" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-bookmark"></i>
+                
+                分类
+            </a>
+        </li>
+        
+        <li>
+            <a href="/archives" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-archive"></i>
+                
+                归档
+            </a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <div class="description center-align post-title">
+                        Higher Mathematics
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                        <a href="/tags/%E9%AB%98%E6%95%B0/" target="_blank">
+                            <span class="chip bg-color">高数</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                        <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category" target="_blank">
+                            笔记
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                <div class="post-date info-break-policy">
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-12-20
+                </div>
+
+                <div class="post-author info-break-policy">
+                    <i class="fa fa-user-o fa-fw"></i>作者:&nbsp;&nbsp;
+                    
+                    XuTu
+                    
+                </div>
+
+                
+                
+                <div class="info-break-policy">
+                    <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.4k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    12 分
+                </div>
+                
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="函数与极限"><a href="#函数与极限" class="headerlink" title="函数与极限"></a>函数与极限</h2><h3 id="函数的极限"><a href="#函数的极限" class="headerlink" title="函数的极限"></a>函数的极限</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>极限：$\lim\limits_{x\to x_0}f(x)=A\Leftrightarrow ∀ε&gt;0，∃δ&gt;0，当0&lt;|x-x_0|&lt;δ时，有|f(x)-A|&lt;ε$</p>
+<p>左极限：$\lim\limits_{x\to x_0^-}f(x)=A\Leftrightarrow ∀ε&gt;0，∃δ&gt;0，当x_0-δ&lt;x&lt;x_0时，有|f(x)-A|&lt;ε$</p>
+<p>右极限：$\lim\limits_{x\to x_0^+}f(x)=A\Leftrightarrow ∀ε&gt;0，∃δ&gt;0，当x_0&lt;x&lt;x_0+δ时，有|f(x)-A|&lt;ε$</p>
+<h4 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h4><p>存在的充要条件：$\lim\limits_{x\to x_0}f(x)=A\Leftrightarrow \lim\limits_{x\to x_0^-}f(x)=\lim\limits_{x\to x_0^+}f(x)=A$</p>
+<p>唯一性：$\lim\limits_{x\to x_0}f(x)=A\Rightarrow 该极限唯一$</p>
+<p>局部有界性：$\lim\limits_{x\to x_0}f(x)=A\Rightarrow ∀M&gt;0，δ&gt;0，0&lt;|x-x_0|&lt;δ，|f(x)|≤M$</p>
+<p>局部保号性：$\lim\limits_{x\to x_0}f(x)=A&gt;0\Rightarrow ∀δ&gt;0，0&lt;|x-x_0|&lt;δ，f(x)&gt;0$，小于0同理</p>
+<h3 id="极限运算法则"><a href="#极限运算法则" class="headerlink" title="极限运算法则"></a>极限运算法则</h3><ul>
+<li><strong>有限个</strong>无穷小的和是无穷小（任意个为Undefined）</li>
+<li><strong>有限个</strong>无穷小（大）的积是无穷小（大）（任意个为Undefined）</li>
+<li>有界函数乘无穷小的积是无穷小</li>
+</ul>
+<h4 id="线性运算性质"><a href="#线性运算性质" class="headerlink" title="线性运算性质"></a>线性运算性质</h4><p>$\lim f(x)=A，\lim g(x)=B\Rightarrow\lim (f(x)±g(x))=A±B$</p>
+<p>$\lim f(x)=A，\lim g(x)=B\Rightarrow\lim (f(x)g(x))=AB$</p>
+<p>$\lim f(x)=A，\lim g(x)=B\neq 0\Rightarrow\lim\frac{f(x)}{g(x)}=\frac{A}{B}$</p>
+<p>$\lim (cf(x))=c\lim f(x)$（c为常数）</p>
+<p>$\lim (f(x))^n=(\lim f(x))^n$（n为正整数）</p>
+<h4 id="括号穿透"><a href="#括号穿透" class="headerlink" title="括号穿透"></a>括号穿透</h4><p>$\lim\limits_{x\to x_0}f(g(x))=f(\lim\limits_{x\to x_0}g(x))$</p>
+<h3 id="极限存在准则-两个重要极限"><a href="#极限存在准则-两个重要极限" class="headerlink" title="极限存在准则 两个重要极限"></a>极限存在准则 两个重要极限</h3><h4 id="夹逼准则"><a href="#夹逼准则" class="headerlink" title="夹逼准则"></a>夹逼准则</h4><p>$x∈\mathring{U}(x_0,r)，g(x)≤f(x)≤h(x)，且\lim\limits_{x\to x_0}g(x)=\lim\limits_{x\to x_0}h(x)=A\Rightarrow \lim\limits_{x\to x_0}f(x)=A$</p>
+<h4 id="重要极限"><a href="#重要极限" class="headerlink" title="重要极限"></a>重要极限</h4><ul>
+<li><p>$\lim\limits_{x\to x_0}\frac{sinx}{x}=1$</p>
+<blockquote>
+<p>证明：$sinx&lt;x&lt;tanx\Rightarrow cosx&lt;\frac{sinx}{x}&lt;1，\lim\limits_{x\to 0}cosx=1\Rightarrow 夹逼准则证出$</p>
+</blockquote>
+</li>
+<li><p>$\lim\limits_{x\to ∞}(1+\frac{1}{x})^x=\lim\limits_{x\to 0}(1+x)^\frac{1}{x}=e$</p>
+<blockquote>
+<p>证明：$(1+\frac{1}{n})^n二项式展开后\leq \sum_{i=0}^{n}\frac{1}{i!}\leq 2+\sum_{i=1}^{n}\frac{1}{2^i}=3-\frac{1}{2^(n-1)}\le 3$，证明极限存在，<strong>定义其为e</strong></p>
+</blockquote>
+</li>
+</ul>
+<h3 id="无穷小的比较"><a href="#无穷小的比较" class="headerlink" title="无穷小的比较"></a>无穷小的比较</h3><h4 id="常用等价无穷小"><a href="#常用等价无穷小" class="headerlink" title="常用等价无穷小"></a>常用等价无穷小</h4><ul>
+<li>$x \sim sinx \sim arcsinx \sim tanx \sim arctanx \sim ln(x+1) \sim e^x-1$</li>
+<li>$1-cosx \sim \frac{x^2}{2} \sim \frac{1}{cosx}-1$</li>
+<li>$(1+x)^α-1 \sim αx$</li>
+<li>$tanx-sinx \sim \frac{x^3}{2}$</li>
+</ul>
+<h3 id="连续函数的性质"><a href="#连续函数的性质" class="headerlink" title="连续函数的性质"></a>连续函数的性质</h3><h4 id="介值定理"><a href="#介值定理" class="headerlink" title="介值定理"></a>介值定理</h4><p>$f(x)∈c[a,b]，f(a)=A，f(b)=B\Rightarrow ∀C∈(A,B)，∃ξ∈(a,b)，st.f(ξ)=C$</p>
+<h2 id="导数与微分"><a href="#导数与微分" class="headerlink" title="导数与微分"></a>导数与微分</h2><p>连续不一定可导（可微）；可导（可微）一定连续</p>
+<p>不是明确可导的函数，不能直接写$f’(x)$，而要先写$\lim\limits_{x\to x_0}\frac{f(x)-f(x_0)}{x-x_0}$存在</p>
+<h3 id="求导法则"><a href="#求导法则" class="headerlink" title="求导法则"></a>求导法则</h3><h4 id="反函数"><a href="#反函数" class="headerlink" title="反函数"></a>反函数</h4><p>$y=f(x)$单调、可导、且$f’(x)\neq 0\Rightarrow (f^{-1}(y))’=\frac{1}{f’(x)}$，<strong>最后记得化作$g(x)=f^{-1}(y)$</strong></p>
+<h4 id="复合函数"><a href="#复合函数" class="headerlink" title="复合函数"></a>复合函数</h4><p>$y=f(g(x))，g(x)在x处可导，f(u)在u=g(x)处可导\Rightarrow y’=\frac{dy}{dx}=\frac{dy}{du}\frac{du}{dx}=f’(g(x))g’(x)$</p>
+<h4 id="常用公式表及推导方法"><a href="#常用公式表及推导方法" class="headerlink" title="常用公式表及推导方法"></a>常用公式表及推导方法</h4><table>
+<thead>
+<tr>
+<th>原函数</th>
+<th>导数</th>
+<th>推导</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$x^u$</td>
+<td>$ux^{u-1}$</td>
+<td>-</td>
+</tr>
+<tr>
+<td>$sinx$</td>
+<td>$cosx$</td>
+<td>-</td>
+</tr>
+<tr>
+<td>$cosx$</td>
+<td>$-sinx$</td>
+<td>-</td>
+</tr>
+<tr>
+<td>$tanx$</td>
+<td>$sec^2x$</td>
+<td>$tanx=\frac{sinx}{cosx}$</td>
+</tr>
+<tr>
+<td>$cotx$</td>
+<td>$-csc^2x$</td>
+<td>$cotx=\frac{cosx}{sinx}$</td>
+</tr>
+<tr>
+<td>$secx$</td>
+<td>$secxtanx$</td>
+<td>$secx=\frac{1}{cosx}$</td>
+</tr>
+<tr>
+<td>$cscx$</td>
+<td>$-cscxtanx$</td>
+<td>$cscx=\frac{1}{sinx}$</td>
+</tr>
+<tr>
+<td>$arcsinx$</td>
+<td>$\frac{1}{\sqrt{1-x^2}}$</td>
+<td>$(arcsinx)’=\frac{1}{(siny)’}=\frac{1}{cosy}$</td>
+</tr>
+<tr>
+<td>$arccosx$</td>
+<td>$\frac{-1}{\sqrt{1-x^2}}$</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>$arctanx$</td>
+<td>$\frac{1}{1+x^2}$</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>$arccotx$</td>
+<td>$\frac{-1}{1+x^2}$</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>$a^x$</td>
+<td>$a^xlna$</td>
+<td>-</td>
+</tr>
+<tr>
+<td>$log_ax$</td>
+<td>$\frac{1}{xlna}$</td>
+<td>$(log_ax)’=\frac{1}{(a^y)’}=\frac{1}{a^ylna}$</td>
+</tr>
+</tbody></table>
+<h3 id="常用高阶导数"><a href="#常用高阶导数" class="headerlink" title="常用高阶导数"></a>常用高阶导数</h3><table>
+<thead>
+<tr>
+<th>原函数</th>
+<th>n阶导</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$sinx$</td>
+<td>$sin(x+\frac{n}{2}π)$</td>
+</tr>
+<tr>
+<td>$cosx$</td>
+<td>$cos(x+\frac{n}{2}π)$</td>
+</tr>
+<tr>
+<td>$f(ax+b)$</td>
+<td>$a^nf^{(n)}(ax+b)$</td>
+</tr>
+<tr>
+<td>$u(x)v(x)$</td>
+<td>$\sum_{i=0}^{n}C_{n}^{n-i}u^{(n-i)}(x)v^{(i)}(x)$</td>
+</tr>
+</tbody></table>
+<h3 id="隐函数及参数方程的导数"><a href="#隐函数及参数方程的导数" class="headerlink" title="隐函数及参数方程的导数"></a>隐函数及参数方程的导数</h3><ul>
+<li><p>隐函数</p>
+<blockquote>
+<p>例子：$e^y+xy-e=0，两边对x求导：e^yy’+(y+xy’)=0，分离变量：y’=-\frac{y}{x+e^y}$</p>
+</blockquote>
+</li>
+<li><p>参数方程</p>
+<blockquote>
+<p>$y’=\frac{dy}{dx}=\frac{\frac{dy}{dt}}{\frac{dx}{dt}}$</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="微分中值定理与导数的应用"><a href="#微分中值定理与导数的应用" class="headerlink" title="微分中值定理与导数的应用"></a>微分中值定理与导数的应用</h2><h3 id="微分中值定理"><a href="#微分中值定理" class="headerlink" title="微分中值定理"></a>微分中值定理</h3><h4 id="拉格朗日中值定理"><a href="#拉格朗日中值定理" class="headerlink" title="拉格朗日中值定理"></a>拉格朗日中值定理</h4><blockquote>
+<p>$f(x)$满足：1：在$[a,b]$连续；2：在(a,b)可导<br>则：$∃ξ∈(a,b)，st.f(b)-f(a)=f’(ξ)(b-a)$</p>
+</blockquote>
+<h4 id="柯西中值定理"><a href="#柯西中值定理" class="headerlink" title="柯西中值定理"></a>柯西中值定理</h4><blockquote>
+<p>$f(x)和F(x)$满足：1：在$[a,b]$连续；2：在$(a,b)$可导；3：$∀x∈(a,b)，F’(x)\neq 0$<br>则：$∃ξ∈(a,b)，st.\frac{f(b)-f(a)}{F(b)-F(a)}=\frac{f’(ξ)}{F’(ξ)}$</p>
+</blockquote>
+<h3 id="洛必达法则"><a href="#洛必达法则" class="headerlink" title="洛必达法则"></a>洛必达法则</h3><blockquote>
+<p>设：<br>(1) $\lim\limits_{x\Rightarrow a}f(x)=\lim\limits_{x\Rightarrow a}F(x)=0$<br>(2) $a$的某去心领域内，$f’(x)，F’(x)$都存在且$F’(x)\neq 0$<br>(3) $\lim\limits_{x\Rightarrow a}\frac{f’(x)}{F’(x)}$存在或为无穷大<br>则：$\lim\limits_{x\Rightarrow a}\frac{f(x)}{F(x)}=\lim\limits_{x\Rightarrow a}\frac{f’(x)}{F’(x)}$</p>
+</blockquote>
+<h3 id="泰勒公式"><a href="#泰勒公式" class="headerlink" title="泰勒公式"></a>泰勒公式</h3><p>$f(x)$在$x_0$处具有$n$阶导$\Rightarrow ∃x∈U(x_0)，st. f(x)=\sum_{i=0}^{n}\frac{f^{(i)}(x_0)}{i!}(x-x_0)^i+o((x-x_0)^n)$</p>
+<p>取$x_0=0$得<strong>n阶局部迈克劳林公式：</strong>$f(x)=\sum_{i=0}^{n}\frac{f^{(i)}(0)}{i!}x^i+o(x^n)$ </p>
+<h4 id="常用公式"><a href="#常用公式" class="headerlink" title="常用公式"></a>常用公式</h4><ul>
+<li>$\frac{1}{1-x}=\sum_{i=0}^{n}x^i+o(x^n)=\frac{1-x^n}{1-x}+o(x^n)$</li>
+<li>推出$\frac{a}{1-x}=\frac{a(1-x^n)}{1-x}+o(x^n)$，即<strong>a为首项，x为公比的等比数列的前n项和</strong></li>
+<li>$e^x=\sum_{i=0}^{n}\frac{x^i}{i!}+o(x^n)$（借此可推出欧拉公式）</li>
+<li>$sinx=\sum_{i=0}^{n}\frac{(-1)^i}{(2i+1)!}+o(x^{2n+1})$</li>
+<li>$cosx=\sum_{i=0}^{n}\frac{(-1)^i}{(2i)!}+o(x^{2n})$</li>
+</ul>
+<h3 id="单调性与极值、凹凸区间与拐点"><a href="#单调性与极值、凹凸区间与拐点" class="headerlink" title="单调性与极值、凹凸区间与拐点"></a>单调性与极值、凹凸区间与拐点</h3><p>$f(x)在[a,b]连续，在(a,b)内具有一阶和二阶导，那么：$</p>
+<ul>
+<li>$若∀x∈(a,b)，f’’(x)&gt;0\Rightarrow f(x)在[a,b]是上凹的$</li>
+<li>$若∀x∈(a,b)，f’’(x)&lt;0\Rightarrow f(x)在[a,b]是上凸的$</li>
+<li>$若∃x_0∈(a,b)，f’’(x)在x_0左右异号\Rightarrow (x_0,f(x_0))是拐点$</li>
+</ul>
+<p><strong>注意：凹凸区间包含端点，拐点是坐标</strong></p>
+<p>单调性的考虑点：驻点（二阶导为0）、不可导点；（<strong>两者都是x=x_0</strong>）</p>
+<p>极值：先求单调性，列表求极值</p>
+<h2 id="不定积分"><a href="#不定积分" class="headerlink" title="不定积分"></a>不定积分</h2><h3 id="换元积分法"><a href="#换元积分法" class="headerlink" title="换元积分法"></a>换元积分法</h3><p>$\int u_v’v’_xdx=\int u_v’dv=u+C$</p>
+<h4 id="常用公式-1"><a href="#常用公式-1" class="headerlink" title="常用公式"></a>常用公式</h4><ul>
+<li>$\int\frac{1}{x}=ln|x|+C$</li>
+<li>$\int tanxdx=\int\frac{1}{cosx}sinxdx=-\int\frac{1}{cosx}dcosx=-ln|cosx|+C$</li>
+<li>$\int cotxdx=\int\frac{1}{sinx}cosxdx=\int\frac{1}{sinx}dsinx=ln|sinx|+C$</li>
+<li>$\int secxdx=ln|secx+tanx|+C$</li>
+<li>$\int cscxdx=-ln|cscx+tanx|+C$</li>
+</ul>
+<p>推导：</p>
+<blockquote>
+<p>$$\begin{split}<br>\int secxdx&amp;=\int\frac{1}{cosx}dx\\<br>&amp;=\int\frac{1}{cos^2x}cosxdx\\<br>&amp;=\int\frac{1}{1-sin^2x}dsinx\\<br>&amp;=\frac{1}{2}\int\frac{(1-sinx)+(1+sinx)}{(1-sinx)(1+sinx)}dsinx\\<br>&amp;=\frac{1}{2}\int(\frac{1}{1+sinx}+\frac{1}{1-sinx})dsinx\\<br>&amp;=\frac{1}{2}(ln|1+sinx|-ln|1-sinx|)+C\\<br>&amp;=ln|\frac{\sqrt{1+sinx}}{\sqrt{1-sinx}}|+C\\<br>&amp;=ln|\frac{\sqrt{(1+sinx)^2}}{\sqrt{(1+sinx)(1-sinx)}}|+C\\<br>&amp;=ln|\frac{1+sinx}{cosx}|+C\\<br>&amp;=ln|secx+tanx|+C<br>\end{split}$$</p>
+</blockquote>
+<h3 id="分部积分法"><a href="#分部积分法" class="headerlink" title="分部积分法"></a>分部积分法</h3><p>$\int udv=uv-\int vdu$：<strong>对反幂三指，排前作u排后作v</strong></p>
+<h2 id="定积分"><a href="#定积分" class="headerlink" title="定积分"></a>定积分</h2><h3 id="定积分的换元积分法和分部积分法"><a href="#定积分的换元积分法和分部积分法" class="headerlink" title="定积分的换元积分法和分部积分法"></a>定积分的换元积分法和分部积分法</h3><ul>
+<li>换元公式$\int_{a}^{b}(x)dx=\int_{α}^{β}f(φ(t))φ’(t)dt$</li>
+<li>分部积分公式$\int_{a}^{b}udv=(u(b)v(b)-u(a)v(a))-\int_{a}^{b}vdu$</li>
+</ul>
+<h3 id="反常积分"><a href="#反常积分" class="headerlink" title="反常积分"></a>反常积分</h3><p>$\frac{d\int_{α(x)}^{β(x)}f(t)dt}{dx}=β’(x)f(β(x))-α’(x)f(α(x))$</p>
+<h3 id="定积分几何"><a href="#定积分几何" class="headerlink" title="定积分几何"></a>定积分几何</h3><p>曲线弧长：</p>
+<ul>
+<li>直角：$s=\int_{a}^{b}\sqrt{1+y’^2}dx$</li>
+<li>参数：$s=\int_{a}^{b}\sqrt{φ’^2(t)+ψ’^2(t)}dt$</li>
+<li>极坐标：$s=\int_{a}^{b}\sqrt{ρ^2(θ)+ρ’^2(θ)}dθ$</li>
+</ul>
+<h2 id="微分方程"><a href="#微分方程" class="headerlink" title="微分方程"></a>微分方程</h2><h3 id="一阶线性微分方程"><a href="#一阶线性微分方程" class="headerlink" title="一阶线性微分方程"></a>一阶线性微分方程</h3><p>$y’+P(x)y=Q(x)\Rightarrow y=(C+\int Q(x)e^{\int P(x)dx}dx)e^{-\int P(x)dx}$</p>
+<h3 id="可降阶的高阶微分方程"><a href="#可降阶的高阶微分方程" class="headerlink" title="可降阶的高阶微分方程"></a>可降阶的高阶微分方程</h3><h4 id="y-n-f-x-（只含-x-型）"><a href="#y-n-f-x-（只含-x-型）" class="headerlink" title="$y^{(n)}=f(x)$（只含$x$型）"></a>$y^{(n)}=f(x)$（只含$x$型）</h4><blockquote>
+<p>$$\begin{split}<br>&amp;y’’=x+sinx\\<br>令：&amp;p=y’，y’’=p’=x+sinx\\<br>两侧积分得：&amp;p=\frac{x^2}{2}-cosx+C_1=y’\\<br>两侧积分得：&amp;y=\frac{x^3}{6}-sinx+C_1x+C_2\\<br>\end{split}$$</p>
+</blockquote>
+<h4 id="y’’-f-x-y’-（含-x，y-型）"><a href="#y’’-f-x-y’-（含-x，y-型）" class="headerlink" title="$y’’=f(x,y’)$（含$x，y$型）"></a>$y’’=f(x,y’)$（含$x，y$型）</h4><blockquote>
+<p>$$\begin{split}<br>&amp;y’’=y’+x\\<br>令：&amp;p=y’，y’’=p’\\<br>原方程化为：&amp;p’-p=x\\<br>一阶线性微分方程公式：&amp;y’+P(x)y=Q(x)\Rightarrow y=(C+\int Q(x)e^{\int P(x)dx}dx)e^{-\int P(x)dx}\\<br>代入：&amp;P(x)=-1，Q(x)=x，C=C_1\\<br>可得：&amp;p=(C_1+\int xe^{\int (-1)dx}dx)e^{-\int (-1)dx}\\<br>&amp;\ =(C_1+\int xe^{-x}dx)e^x\\<br>&amp;\ =(C_1-\int xde^{-x})e^x\\<br>&amp;\ =(C_1-(xe^{-x}-\int e^{-x}dx))e^x\\<br>&amp;\ =(-xe^{-x}-e^{-x}+C_1)e^x\\<br>&amp;\ =-x-1+C_1e^x\\<br>即：&amp;y’=p=-x-1+C_1e^x\\<br>两侧积分得：&amp;y=\int (C_1e^x-x-1)dx=C_1e^x-\frac{x^2}{2}-x+C^2<br>\end{split}$$</p>
+</blockquote>
+<h4 id="y’’-f-y-y’-（不含-x-型）"><a href="#y’’-f-y-y’-（不含-x-型）" class="headerlink" title="$y’’=f(y,y’)$（不含$x$型）"></a>$y’’=f(y,y’)$（不含$x$型）</h4><blockquote>
+<p>$$\begin{split}<br>&amp;yy’’+2y’^2=0\\<br>令：&amp;p=y’，y’’=p’=\frac{dp}{dy}\frac{dy}{dx}=\frac{dp}{dy}p\\<br>原方程化为：&amp;y\frac{dp}{dy}p+2p^2=0\\<br>分离变量得：&amp;\frac{dp}{p}=-2\frac{dy}{y}\\<br>两侧积分得：&amp;ln|p|=ln\frac{1}{y^2}+C_1\\<br>即：&amp;p=\frac{C_0}{y^2}=y’=\frac{dy}{dx}\\<br>分离变量得：&amp;y^2dy=C_0dx\\<br>两侧积分得：&amp;y^3=C_1x+C_2<br>\end{split}$$</p>
+</blockquote>
+<h3 id="常系数齐次线性微分方程"><a href="#常系数齐次线性微分方程" class="headerlink" title="常系数齐次线性微分方程"></a>常系数齐次线性微分方程</h3><h4 id="二阶"><a href="#二阶" class="headerlink" title="二阶"></a>二阶</h4><p>令$y’’+py’+qy=0\Rightarrow 特征方程：r^2+pr+q=0，考虑其解的情况：$</p>
+<table>
+<thead>
+<tr>
+<th>特征方程的解</th>
+<th>通解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$r_1\neq r_2∈R$</td>
+<td>$y=C_1e^{r_1x}+C_2e^{r_2x}$</td>
+</tr>
+<tr>
+<td>$r_1=r_2=r∈R$</td>
+<td>$y=C_1e^{rx}+C_2xe^{rx}$</td>
+</tr>
+<tr>
+<td>$r_1=α+iβ，r_2=α-iβ$</td>
+<td>$y=C_1e^{αx}cosβx+C_2e^{αx}sinβx$</td>
+</tr>
+</tbody></table>
+<h4 id="高阶"><a href="#高阶" class="headerlink" title="高阶"></a>高阶</h4><p>第$i$重根就乘$x^i$</p>
+<table>
+<thead>
+<tr>
+<th>特征方程的解</th>
+<th>通解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$r_1=-1，r_2=r_3=i，r_4=r_5=-i$</td>
+<td>$y=C_1e^{-x}+C_2cosx+C_3sinx+C_4xcosx+C_5xsinx$</td>
+</tr>
+<tr>
+<td>$r_1=r_2=r_3=r$</td>
+<td>$y=C_1e^{rx}+C_2xe^{rx}+C_3x^2e^{rx}$</td>
+</tr>
+</tbody></table>
+<h3 id="常系数非齐次线性微分方程"><a href="#常系数非齐次线性微分方程" class="headerlink" title="常系数非齐次线性微分方程"></a>常系数非齐次线性微分方程</h3><p>$y’’+py’+qy=P_m(x)e^{λx}\Rightarrow 特解y^*=x^kQ_m(x)e^{λx}（k：λ是特征方程的k重根）$</p>
+<p>一般做法：</p>
+<ul>
+<li>先令$y’’+py’+qy=0$，求其特征方程的根</li>
+<li>右侧化为$P_m(x)e^{λx}$（有$sinx或cosx时λ$设为复数），得到$λ$是$k$重根</li>
+<li>设出特解$y^*=x^kQ_m(x)e^{λx}（有sinx或cosx时为\overline{y}）$</li>
+<li>$y^*代入y$解出$Q_m(x)$的系数，得到特解（有$cosx时为\overline{y}$的实部；有$sinx时为\overline{y}$的虚部）</li>
+</ul>
+
+            </div>
+            <hr />
+
+            
+
+            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+            
+
+
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/higher-mathematics/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Higher Mathematics">
+                        
+                        <span class="card-title">Higher Mathematics</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            高数公式、笔记等等杂项
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-12-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category" target="_blank">
+                                    笔记
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%AB%98%E6%95%B0/" target="_blank">
+                        <span class="chip bg-color">高数</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/rmq/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="RMQ">
+                        
+                        <span class="card-title">RMQ</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            区间最大（最小）查询
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-12-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category" target="_blank">
+                                    算法
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" target="_blank">
+                        <span class="chip bg-color">动态规划</span>
+                    </a>
+                    
+                    <a href="/tags/ST%E7%AE%97%E6%B3%95/" target="_blank">
+                        <span class="chip bg-color">ST算法</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+</div>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fa fa-list"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h1, h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).slideUp(500);
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).slideDown(500);
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+    
+
+</main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
+
+
+    <footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            &copy; 2020-2020 XuTu. 版权所有
+
+            
+            &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
+            <span class="white-color">18.5k</span>
+            
+
+            <br>
+            <span id="sitetime"></span>
+
+            
+            
+        </div>
+        <div class="col s12 m4 l4 social-link ">
+    <a href="https://github.com/alexander7xu" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fa fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:alexander7xu@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+<script language=javascript>
+    function siteTime() {
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000;
+        var minutes = seconds * 60;
+        var hours = minutes * 60;
+        var days = hours * 24;
+        var years = days * 365;
+        var today = new Date();
+        var todayYear = today.getFullYear();
+        var todayMonth = today.getMonth() + 1;
+        var todayDate = today.getDate();
+        var todayHour = today.getHours();
+        var todayMinute = today.getMinutes();
+        var todaySecond = today.getSeconds();
+        /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+        var t1 = Date.UTC(2020, 11, 22, 00, 00, 00); //北京时间2018-2-13 00:00:00
+        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+        var diff = t2 - t1;
+        var diffYears = Math.floor(diff / years);
+        var diffDays = Math.floor((diff / days) - diffYears * 365);
+        var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+        var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+        var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+        document.getElementById("sitetime").innerHTML = "本站已运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+    }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
+    siteTime();
+</script>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <script type="text/javascript"> var OriginTitile = document.title, st; document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "Σ(っ °Д °;)っ喔哟，崩溃啦！", clearTimeout(st)) : (document.title = "φ(゜▽゜*)♪咦，又好了！", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) })
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+    
+    <script src="/libs/others/clicklove.js"></script>
+    
+
+    
+
+    <!-- 雪花特效 -->
+    
+
+</body>
+
+</html>
